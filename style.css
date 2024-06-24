@@ -279,7 +279,9 @@ header nav ul li a:hover {
     background-color: gold;
     border-radius: 8px;
 }
-
+.projects strong{
+    color: gold;
+}
 /* Contact Section */
 .contact {
     display: flex;
