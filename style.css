@@ -1,0 +1,350 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+header {
+    color: #d7a314;
+    margin: 20px 0 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #d7a314;
+}
+
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    
+}
+.home h1{
+    font-size: 60px;
+}
+.home p{
+    font-size: 30px;
+    font-weight: 200;
+}
+.home h1 span {
+    color: gold;
+}
+.main-btns a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.main-btns a:first-child {
+    background-color: gold;
+    color: black;
+}
+.main-btns a:last-child {
+    background-color: black;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.about-container .about-img{
+    width: 200px;
+    height: auto;
+}
+.abt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.details {
+    margin-left: 20px;
+}
+
+.details h1 {
+    font-size: 3em;
+    position: relative;
+    margin: 0;
+    color: gold;
+}
+
+.details h1::after {
+    content: 'About';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 5em;
+    z-index: -1;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.info li {
+    margin: 5px 0;
+}
+
+.projects {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cv-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.skills {
+    
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: gold;
+}
+
+.small-skills-section h2 {
+    margin-top: 40px;
+    font-size: 2em;
+    color: #555;
+    text-align: left;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.skill-icon {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.skill-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.skill-txt {
+    text-align: center;
+}
+
+.skill-txt h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: gold;
+}
+
+.skill-txt p {
+    font-size: 1em;
+    margin: 0;
+    color: #666;
+}
+
+.projects{
+    text-align: center;
+    padding: 20px;
+}
+.projects h1 {
+    font-size: 2.5em;
+    position: relative;
+    margin: 0;
+    color: gold;
+}
+
+.projects h1::after {
+        content: 'Projects';
+        position: absolute;
+        top: 0;
+        left: 1;
+        color: rgba(255, 255, 255, 0.1);
+        font-size:  2em;
+        z-index: 0;
+}
+.projects-box{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.sing-project img{
+    width: 300px;
+    transition: all 0.3s ease;
+}
+.sing-project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 215, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.1s ease;
+    border-radius: 8px;
+}
+
+.sing-project .overlay .text {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+.projects-box:hover img {
+    filter: brightness(50%);
+}
+
+.projects-box:hover .overlay {
+    opacity: 1;
+}
+.projects .more{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.projects .more a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: gold;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact .form-group input, 
+.contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact .form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 400px;
+    text-align: center;
+}
+
+.contact button:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
