@@ -75,6 +75,18 @@ header nav ul li a:hover {
 }
 .main-btns a:last-child {
     background-color: black;
+    border: 1px solid gold;
+}
+
+.main-btns a:first-child:hover{
+    background-color: #000;
+    color: #f8f8f8;
+    border: 1px solid gold;
+}
+
+.main-btns a:last-child:hover{
+    background-color: gold;
+    color: #000;
 }
 
 .abt-container{
@@ -253,7 +265,6 @@ header nav ul li a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 215, 0, 0.8);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,6 +277,8 @@ header nav ul li a:hover {
     font-size: 1.5em;
     text-align: center;
     padding: 20px;
+    text-decoration: none;
+    color: #ccc;
 }
 .projects-box:hover img {
     filter: brightness(50%);
