@@ -287,19 +287,7 @@ header nav ul li a:hover {
 .projects-box:hover .overlay {
     opacity: 1;
 }
-.projects .more{
-    padding: 10px;
-    display: flex;
-    justify-content: end;
-}
 
-.projects .more a{
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    background-color: gold;
-    border-radius: 8px;
-}
 .projects strong{
     color: gold;
 }
